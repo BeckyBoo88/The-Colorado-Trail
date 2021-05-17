@@ -10,14 +10,45 @@
 <body>
     <h1>Welcome to The Colorado Trail</h1>
     <div class="playBox">
-        <div id="scenarios">
-            <p id="sText">
-                Hello Adventurer, are you prepared to get from one end of the trail to the other? Make the correct choices and you may just be successful!
+        <div id="welcomeScreen">
+            <p id="wText">
+                Hello Adventurer, are you prepared to get from one end of the trail to the other? Make the correct choices and you may just be successful.  The game is simple enough.  Click the choice that you would like to do and see how the game unfolds.  Think carefully and have fun!
             </p>
         </div>
-        <div id="actions">
-            <button>Start</button>
+            <button id="start">Start</button>
+
+        <div id="startScreen">
+            <p id="sText">
+                You're at the start of the trail bright eyed and bushy tailed.  You look at the trail information marker to see what you're getting into.  It says the trail is only 8 miles but there is a warning to not go if you aren't prepared.  They recommend going in a group and to make sure you have plenty of water. What would you like to do?
+            </p>
+            <button id="start1">Screw it! I'm here, I have water, I'm ready, I'm going! You start to head down the trail</button>
+            <button id="start2">You call a couple friends and decide to wait an hour for them to show up.</button>
+            <button id="start3">You decide you're not prepared, head home, and will come back another day.</button>
         </div>
+        
+        <div id="soloSituation">
+            <p id="sSText">
+                You break out as a “true” adventurer and hit the trail alone.  You take in the beautiful scenery and are truly captivated by the beauty of the back country. You come to a fork in the road and have two options:
+            </p>
+            <button id='solo1'>You head right, it’s a bit longer but the promise of breath-taking views and bit more technical hiking is too hard to resist.</button>
+            <button id='solo2'>You go left.  The trail isn’t as long but it’s more heavily wooded and the promise of shade from the rising sun is calling to you.</button>
+        </div>
+
+        <div id='soloOption1'>
+            <p id='sOption1'>
+                You are loving your choice.  The trail hasn’t been well maintained but the views are even better than you could have imagined.  You’re staring up at the largest and most majestic bald eagle, you’re about to take a picture worth of National Geographic and fail to notice the prairie dog hole in your path.  As you snap the picture you also happen to snap your ankle! A park ranger finds you and calls for air rescue to get you out.  You are no Lewis or Clark! FAIL!
+            </p>
+            <button class='reset'>Would you like to try again?</button>
+        </div>
+
+        <div id='soloOption2'>
+            <p id='sOption2'>
+                You thank God that you took the heavily wooded shorter trail.  As the day goes forward, it’s only getting hotter.  You think to yourself that next time you’ll need to start sooner to avoid the heat.  The trees get denser and it starts to feel a bit eerie.  Almost like you’re being watched… <br>
+                Next thing you know you're getting eaten butt first by a mountain lion!  Those silly apex predators.  You earned your Darwin Award on the Colorado Trail!
+            </p>
+            <button class='reset'>Would you like to try again?</button>
+        </div>
+
     </div>
     
 

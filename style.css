@@ -1,8 +1,9 @@
 body {
    background-image: url(ColoradoTrail2.jpg);
-   height: 600px;
+   /*height: 600px;
+   */
    background-position: center;
-   background-repeat: no-repeat;
+   /* background-repeat: no-repeat; */
    background-size: cover;
 }
 
@@ -15,11 +16,17 @@ h1 {
    border-style: solid;
    border-width: thick;
    background-color: lightgrey;
-   position: fixed;
+   /*position: fixed;
+   */
    top: 30%;
-   left: 300px;
+   left: 270px;
+   right: 250px;
 }
 
-#sText {
-   padding: 15px;
+#wText {
+   padding: 10px;
+}
+
+#start {
+   margin: 0 0px 10px 400px;
 }
