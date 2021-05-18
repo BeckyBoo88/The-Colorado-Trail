@@ -80,10 +80,6 @@ start3Btn.addEventListener('click', () => {
 
 // Reset Game
 
-// resetBtn.addEventListener('click', () => {
-//     console.log("You clicked me!!")
-//     resetGame ()
-
 function resetGame() {
     startScreen.style.display= 'block'
     solo.style.display='none'
