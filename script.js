@@ -9,7 +9,6 @@ let start3Btn= document.getElementById('start3')
 // Start Button 1 option: 
 let solo= document.getElementById('soloSituation')
 
-// Options to begin Solo trail:
 let solo1Btn= document.getElementById('solo1')
 let solo2Btn= document.getElementById('solo2')
 
@@ -18,8 +17,10 @@ let sOption2= document.getElementById('soloOption2')
 
 // Start Button 2 option:
 let friend= document.getElementById('friendsSituation')
+
 let friend1Btn= document.getElementById('friends1')
 let friend2Btn= document.getElementById('friends2')
+
 let fOption1= document.getElementById('friendsOption1')
 let fOption2= document.getElementById('friendsOption2')
 
@@ -77,6 +78,23 @@ start3Btn.addEventListener('click', () => {
     notReady.style.display= 'block'
 })
 
-resetBtn.addEventListener('click', () => {
+// Reset Game
+
+// resetBtn.addEventListener('click', () => {
+//     console.log("You clicked me!!")
+//     resetGame ()
+
+function resetGame() {
     startScreen.style.display= 'block'
-})
+    solo.style.display='none'
+    sOption1.style.display= 'none'
+    sOption2.style.display= 'none'
+    friend.style.display= 'none'
+    fOption1.style.display= 'none'
+    fOption2.style.display= 'none'
+    notReady.style.display= 'none'
+}
+
+for (i=0; i < resetBtn.length; i++) {
+    resetBtn[i].addEventListener('click', resetGame)
+}
