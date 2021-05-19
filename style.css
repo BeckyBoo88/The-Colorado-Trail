@@ -68,12 +68,14 @@ button {
    padding: 10px;
    margin: 10px;
    background-color: rgb(237, 237, 237, .5);
+   font-size: 18px;
 }
 
 .buttonHolder {
    display: flex;
    justify-content: center;
    margin-top: 100px;
+   flex-direction: row;
 }
 
 audio {
