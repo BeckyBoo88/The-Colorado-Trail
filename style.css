@@ -15,18 +15,16 @@ h1 {
    background-color: rgb(123, 104, 238, .7);
    padding: 10px;
    margin: 100px 100px 100px 100px;
-   display: grid;
-   grid-template-areas: "a a a"
-                        ". b .";
-   grid-template-rows: repeat (2, 100px);
+   display: flex;
+   justify-content: center;
+  
 }
 
 p {
-   background-color: rgb(237, 237, 237);
+   background-color: rgb(237, 237, 237, .5);
    font-size: 20px;
    margin: 10px;
-   grid-area: "b";
-   justify-self: center;
+   padding: 10px;
 
 }
 
@@ -69,8 +67,7 @@ p {
 button {
    padding: 10px;
    margin: 10px;
-
-   /* display: flex;
-   flex-direction: column;
-   align-self: center; */
+   display: grid;
+   justify-content: center;
+   background-color: rgb(237, 237, 237, .5);
 }
