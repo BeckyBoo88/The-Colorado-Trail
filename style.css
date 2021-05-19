@@ -67,7 +67,11 @@ p {
 button {
    padding: 10px;
    margin: 10px;
-   display: grid;
-   justify-content: center;
    background-color: rgb(237, 237, 237, .5);
+}
+
+.buttonHolder {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
 }
