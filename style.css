@@ -15,12 +15,19 @@ h1 {
    background-color: rgb(123, 104, 238, .7);
    padding: 10px;
    margin: 100px 100px 100px 100px;
+   display: grid;
+   grid-template-areas: "a a a"
+                        ". b .";
+   grid-template-rows: repeat (2, 100px);
 }
 
 p {
    background-color: rgb(237, 237, 237);
    font-size: 20px;
    margin: 10px;
+   grid-area: "b";
+   justify-self: center;
+
 }
 
 #wText {
@@ -62,7 +69,8 @@ p {
 button {
    padding: 10px;
    margin: 10px;
-   display: flex;
+
+   /* display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-self: center; */
 }
