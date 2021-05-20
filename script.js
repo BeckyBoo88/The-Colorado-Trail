@@ -102,7 +102,8 @@ start3Btn.addEventListener('click', () => {
 // Reset Game
 
 function resetGame() {
-    startScreen.style.display= 'block'
+    welcome.style.display= 'block'
+    startScreen.style.display= 'none'
     solo.style.display='none'
     sOption1.style.display= 'none'
     sOptionA.style.display= 'none'
