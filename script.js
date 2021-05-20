@@ -19,10 +19,7 @@ let s1BBtn= document.getElementById('sOptionB')
 let sOptionA= document.getElementById('soloOptionA')
 let sOptionB= document.getElementById('soloOptionB')
 
-
 let solo2Btn= document.getElementById('solo2')
-
-
 let sOption2= document.getElementById('soloOption2')
 
 // Start Button 2 option:
@@ -40,6 +37,9 @@ let notReady= document.getElementById('notReadySituation')
 // Start Over Button
 let resetBtn= document.getElementsByClassName('reset')
 
+// Gif Div
+let hikingGif= document.getElementById('testingGifIdea')
+
 // Begins the game, leads to first screen of choices
 
 startBtn.addEventListener('click', () => {
@@ -52,27 +52,37 @@ startBtn.addEventListener('click', () => {
 
 start1Btn.addEventListener('click', () => {
     startScreen.style.display= 'none'
-    solo.style.display='block'
+    hikingGif.style.display="block"
+    transitionPage ()
+    // solo.style.display='block'
 })
 
 solo1Btn.addEventListener('click', () => {
     solo.style.display= 'none'
-    sOption1.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage2 ()
+    // sOption1.style.display= 'block'
 })
 
 s1ABtn.addEventListener('click', () => {
     sOption1.style.display= 'none'
-    sOptionA.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage3 ()
+    // sOptionA.style.display= 'block'
 })
 
 s1BBtn.addEventListener('click', () => {
     sOption1.style.display= 'none'
-    sOptionB.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage4 ()
+    // sOptionB.style.display= 'block'
 })
 
 solo2Btn.addEventListener('click', () => {
     solo.style.display= 'none'
-    sOption2.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage5 ()
+    // sOption2.style.display= 'block'
 })
 
 //You decide to wait for friends
@@ -84,19 +94,25 @@ start2Btn.addEventListener('click', () => {
 
 friend1Btn.addEventListener('click', () => {
     friend.style.display= 'none'
-    fOption1.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage6 ()
+    // fOption1.style.display= 'block'
 })
 
 friend2Btn.addEventListener('click', () => {
     friend.style.display= 'none'
-    fOption2.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage7 ()
+    // fOption2.style.display= 'block'
 })
 
 // You Aren't Ready Yet
 
 start3Btn.addEventListener('click', () => {
     startScreen.style.display= 'none'
-    notReady.style.display= 'block'
+    hikingGif.style.display="block"
+    transitionPage8 ()
+    // notReady.style.display= 'block'
 })
 
 // Reset Game
@@ -118,3 +134,75 @@ function resetGame() {
 for (i=0; i < resetBtn.length; i++) {
     resetBtn[i].addEventListener('click', resetGame)
 }
+
+function transitionPage () {
+setTimeout(function () {
+    hikingGif.style.display= 'none'; 
+}, 5000);
+setTimeout(function (){
+    solo.style.display='block';
+}, 5050);
+}
+
+function transitionPage2 () {
+    setTimeout(function () {
+        hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        sOption1.style.display='block';
+    }, 5050);
+    }
+
+function transitionPage3 () {
+    setTimeout(function () {
+         hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        sOptionA.style.display='block';
+     }, 5050);
+    }
+
+function transitionPage4 () {
+    setTimeout(function () {
+        hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        sOptionB.style.display='block';
+    }, 5050);
+    }
+
+function transitionPage5 () {
+    setTimeout(function () {
+      hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+     sOption2.style.display='block';
+    }, 5050);
+    }
+
+function transitionPage6 () {
+    setTimeout(function () {
+        hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        fOption1.style.display='block';
+    }, 5050);
+    }
+
+function transitionPage7 () {
+    setTimeout(function () {
+        hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        fOption2.style.display='block';
+    }, 5050);
+    }
+
+function transitionPage8 () {
+    setTimeout(function () {
+        hikingGif.style.display= 'none'; 
+    }, 5000);
+    setTimeout(function (){
+        notReady.style.display='block';
+    }, 5050);
+    }

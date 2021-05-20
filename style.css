@@ -75,6 +75,10 @@ p {
    display: none;
 }
 
+#testingGifIdea {
+   display: none;
+}
+
 button {
    padding: 10px;
    margin: 10px;
