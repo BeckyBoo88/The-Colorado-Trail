@@ -47,6 +47,14 @@ p {
    display: none;
 }
 
+#soloOptionA {
+   display: none;
+}
+
+#soloOptionB {
+   display: none;
+}
+
 #soloOption2 {
    display: none;
 }

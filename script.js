@@ -11,9 +11,18 @@ let start3Btn= document.getElementById('start3')
 let solo= document.getElementById('soloSituation')
 
 let solo1Btn= document.getElementById('solo1')
-let solo2Btn= document.getElementById('solo2')
 
 let sOption1=document.getElementById('soloOption1')
+let s1ABtn= document.getElementById('sOptionA')
+let s1BBtn= document.getElementById('sOptionB')
+
+let sOptionA= document.getElementById('soloOptionA')
+let sOptionB= document.getElementById('soloOptionB')
+
+
+let solo2Btn= document.getElementById('solo2')
+
+
 let sOption2= document.getElementById('soloOption2')
 
 // Start Button 2 option:
@@ -51,6 +60,16 @@ solo1Btn.addEventListener('click', () => {
     sOption1.style.display= 'block'
 })
 
+s1ABtn.addEventListener('click', () => {
+    sOption1.style.display= 'none'
+    sOptionA.style.display= 'block'
+})
+
+s1BBtn.addEventListener('click', () => {
+    sOption1.style.display= 'none'
+    sOptionB.style.display= 'block'
+})
+
 solo2Btn.addEventListener('click', () => {
     solo.style.display= 'none'
     sOption2.style.display= 'block'
@@ -86,6 +105,8 @@ function resetGame() {
     startScreen.style.display= 'block'
     solo.style.display='none'
     sOption1.style.display= 'none'
+    sOptionA.style.display= 'none'
+    sOptionB.style.display= 'none'
     sOption2.style.display= 'none'
     friend.style.display= 'none'
     fOption1.style.display= 'none'
