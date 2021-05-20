@@ -97,3 +97,12 @@ button {
 audio {
    margin-top: 70px;
 }
+
+#heresJohnny, #poopFail, #mountainLion {
+   float: right;
+}
+
+#poopFail {
+   height: 200px;
+   width: 300px;
+}
