@@ -1,5 +1,6 @@
 let welcome= document.getElementById('welcomeScreen')
 let startBtn= document.getElementById('start')
+let myAudio=document.querySelector('audio')
 
 let startScreen= document.getElementById('startScreen')
 let start1Btn= document.getElementById('start1')
@@ -35,6 +36,7 @@ let resetBtn= document.getElementsByClassName('reset')
 startBtn.addEventListener('click', () => {
     startScreen.style.display= "block"
     welcome.style.display= "none"
+    myAudio.play()
 })
 
 // You decide to go alone
