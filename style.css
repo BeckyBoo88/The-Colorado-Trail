@@ -98,11 +98,16 @@ audio {
    margin-top: 70px;
 }
 
-#heresJohnny, #poopFail, #mountainLion {
+#heresJohnny, #poopFail, #groupSuccess, #mountainLion, #smartMove {
    float: right;
 }
 
 #poopFail {
    height: 200px;
    width: 300px;
+}
+
+#groupSuccess {
+   height: 300px;
+   width: 400px;
 }
